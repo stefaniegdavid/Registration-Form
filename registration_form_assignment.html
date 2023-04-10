@@ -1,59 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <strong>Registation Form </strong>
-    </head>
-    <body>
-        <form action="/process" methods="post">
-            <div>
-                <label>First Name:*</label>
-                <input type="text" name="first_name">
-            </div>
-            <div>
-                <label>Last Name:*</label>
-                <input type="text" name="last_name">
-            </div>
-            <div>
-                <label>Email Address:*</label>
-                <input type="text" name="email">
-            </div>
-            <div>
-                <label>Password:*</label>
-                <input type="password" name="password">
-            </div>
-            <div>
-                <label>Confirm Password:*</label>
-                <input type="password" name="password">
-            </div>
-            <div>
-                <label>Birthday:</label>
-                <input type="date" date="dob">
-            </div>
-            <div>
-                <input type="radio" name="Male">
-                <label for="radio">Male</label>
-                <input type="radio" name="Female">
-                <label for="radio">Female</label>
-                <input type="radio" name="Non-binary">
-                <label for="radio">Non-binary</label>
-                <input type="radio" name="I prefer not to answer">
-                <label for="radio">I prefer not to answer</label>
-            <div>
-                <label for="text">A short description about myself:</label>
-            </div>
-            <div>
-                <textarea>    
-                </textarea>
-            </div>
-            <div>
-                <input type="checkbox" name="updates" id ="updates" checked >
-                <label for="updates">Yes, I would like to receive periodic email updates</label>
-            </div>
-            <div>
-                <input type="Create Account" value="Create Account">
-            </div>
-            <div> *Indicates a required field
-            </div>
-        </form>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/process" method="post">
+        <div>
+            <label>First Name:*</label>
+            <input type="text" name="first_name">
+        </div>
+        <div>
+            <label>Last Name:*</label>
+            <input type="text" name="last_name">
+        </div>
+        <div>
+            <label>Email Address:*</label>
+            <input type="text" name="email">
+        </div>
+        <div>
+            <label>Password:*</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label>Confirm Password:*</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label>Birthday:</label>
+            <input type="date" name="dob">
+        </div>
+        <div>
+            <input type="radio" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female">
+            <label for="Female">Female</label>
+            <input type="radio" id="Non-binary">
+            <label for="Non-binary">Non-binary</label>
+            <input type="radio" id="no-answer">
+            <label for="no-answer">I prefer not to answer</label>
+        </div>
+        <div>
+            <label for="description">A short description about myself:</label>
+            <textarea id="description">    
+            </textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="updates" id ="updates" checked >
+            <label for="updates">Yes, I would like to receive periodic email updates</label>
+        </div>
+        <div>
+            <input type="submit" value="Create Account">
+        </div>
+        <div> *Indicates a required field
+        </div>
+    </form>
+</body>
 </html>
+
+
